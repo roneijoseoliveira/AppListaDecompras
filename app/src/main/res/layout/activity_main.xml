@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorActivatedHighlight"
+    android:orientation="vertical"
+    android:padding="@android:dimen/notification_large_icon_height"
+    tools:context="app.com.revisao.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:paddingEnd="@android:dimen/app_icon_size"
+        android:text="Nome"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        tools:ignore="RtlCompat"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <EditText
+        android:id="@+id/main_txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/black"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <Button
+        android:id="@+id/main_btnOk"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:text="OK"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/main_btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:onClick="clickAction"
+        android:text="Add"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />/>
+
+    <Button
+        android:id="@+id/main_btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:onClick="clickAction"
+        android:text="View"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />/>
+
+    <Button
+        android:id="@+id/main_btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:onClick="clickAction"
+        android:text="Update"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />/>
+
+    <Button
+        android:id="@+id/main_btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:onClick="clickAction"
+        android:text="Delete"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />/>
+
+</LinearLayout>
